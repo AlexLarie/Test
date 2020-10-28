@@ -1,0 +1,60 @@
+.header{
+    margin-bottom: 25px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 37px;
+    }
+    &__language{
+        margin-right: 13px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    &__contacts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            height: 100%;
+            margin-right: 8px;
+        }
+    }
+    &__tel{
+        margin-right: 15px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    &__logo{
+        max-width: 230px;
+        .logo{
+            min-width: 150px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.menu{
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        margin-right: 50px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+    &__link{
+        font-family: 'Commissioner', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 3%;
+        text-transform: uppercase;
+        color: black;
+    }
+}

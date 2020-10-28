@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500&family=Lato:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container-lg">
+            <div class="header__top">
+                <span class="text header__language">
+                    Язык 
+                    <select name="language" id="language">
+                        <option value="rus">Русский</option>
+                    </select>
+                </span>
+                <span class="header__eye">
+                    <i class="fas fa-eye" id="eye"></i>
+                </span>
+                <div class="header__contacts">
+                    <a type="tel" href="+375447550101" class="header__tel">+375(44)7550101</a>
+                    <a href="+375447550101" type="tel"><img src="/components/img/operators/A1.png" alt=""></a>
+                    <a href="+375447550101" type="tel"><img src="/components/img/operators/wa.png" alt=""></a>
+                    <a href="+375447550101" type="tel"><img src="/components/img/operators/viber.png" alt=""></a>
+                    <a type="tel" href="+375445500101" class="header__tel">+375(29)5500101</a>
+                    <a href="+375445500101" type="tel"><img src="/components/img/operators/mts.png" alt=""></a>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__logo">
+                    <img class="logo" src="./components/img/Logo.png" alt="">
+                </div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Тарифы
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Инфоцентр
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="main__slider">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item main__item active">
+                        <img src="./components/img/main/1.png" class="d-block w-100 h-100" alt="...">
+                        <div class="container-lg">
+                            <div class="carousel-caption main__inner d-none d-md-block">
+                                <h1 class="title main__title">Взыскание дебиторской задолженности</h1>
+                                <div class="text main__text">Индивидуальный подход и нацеленность на достижение результата</div>
+                                <div class="button__wrapper"><button class="button main__button">Подробнее</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item main__item">
+                        <img src="./components/img/main/2.png" class="d-block w-100 h-100" alt="...">
+                        <div class="container-lg">
+                            <div class="carousel-caption main__inner d-none d-md-block">
+                                <h1 class="title main__title">Регистрация ООО</h1>
+                                <div class="text main__text">Гарантируем минимальные сроки регистрации под ключ</div>
+                                <div class="button__wrapper"><button class="button main__button">Подробнее</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item main__item">
+                        <img src="./components/img/main/3.png" class="d-block w-100 h-100" alt="...">
+                        <div class="container-lg">
+                            <div class="carousel-caption main__inner d-none d-md-block">
+                                <h1 class="title main__title">Ликвидация предприятия</h1>
+                                <div class="text main__text">Эффективное решение сложных задач</div>
+                                <div class="button__wrapper"><button class="button main__button">Подробнее</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item main__item">
+                        <img src="./components/img/main/4.png" class="d-block w-100 h-100" alt="...">
+                        <div class="container-lg">
+                            <div class="carousel-caption main__inner d-none d-md-block">
+                                <h1 class="title main__title">Юридическая консультация</h1>
+                                <div class="text main__text">Детальные разъяснения вопросов по ведению бизнеса от профессионалов</div>
+                                <div class="button__wrapper"><button class="button main__button">Подробнее</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item main__item">
+                        <img src="./components/img/main/5.png" class="d-block w-100 h-100" alt="...">
+                        <div class="container-lg">
+                            <div class="carousel-caption main__inner d-none d-md-block">
+                                <h1 class="title main__title">Юридический аутсорсинг</h1>
+                                <div class="text main__text">Гарантия своевременности и качества услуг</div>
+                                <div class="button__wrapper"><button class="button main__button">Подробнее</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__arrows">
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+            <div class="advantages__gallery container-lg">
+                    <div class="advantages__item">
+                        <div class="advantages__img">
+                            <img id="advantages__img" src="./components/img/advantages/1.png" alt="">
+                        </div>
+                        <div class="advantages__text text">
+                            Надежная защита
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__img">
+                            <img src="./components/img/advantages/2.png" alt="">
+                        </div>
+                        <div class="advantages__text text">
+                            Надежная защита
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__img">
+                            <img src="./components/img/advantages/3.png" alt="">
+                        </div>
+                        <div class="advantages__text text">
+                            Надежная защита
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__img">
+                            <img src="./components/img/advantages/4.png" alt="">
+                        </div>
+                        <div class="advantages__text text">
+                            Надежная защита
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container-lg">
+            <div class="about__content">
+                <div class="about__inner">
+                    <h2 class="subtitle">
+                        Юридическое сопровождение бизнеса от "МК - Правовые технологии"
+                    </h2>
+                    <p class="text">
+                        Главный принцип нашей работы - качество.
+                        Постоянно следовать ему помогает сплоченная команда талантливых и энергичных сотрудников,
+                        способных сообща заниматься сложными проектами, никогда не допуская сбоев в работе.
+                    </p>
+                    <p class="text">
+                        Мы обеспечиваем максимальный уровень профессионального обслуживания,
+                        который можно ожидать от крупной юридической фирмы.
+                    </p>
+                    <p class="text">
+                        Нашу фирму отличают яркая индивидуальность и следование модели
+                        эффективного юридического обслуживания. Благодаря профессиональной
+                        гибкости мы находим творческие решения как обычных вопросов, так и
+                        неординарных проблем, возникающих у наших клиентов.
+                    </p>
+                    <p class="text">
+                        Все наши рекомендации основаны на глубоких академических знаниях
+                        и опыте практического применения в хозяйственном праве.
+                    </p>
+                </div>
+                <div class="about__img">
+                    <img src="./components/img/introduction/stairs.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container-lg">
+            <div class="services__inner">
+                <h2 class="subtitle">
+                    Основные направления деятельности
+                </h2>
+                <div class="services__gallery">
+                    <div class="services__item item">
+                        <div class="item__left">
+                            <h5 class="cardtext item__text">
+                                Взыскание долгов
+                            </h5>
+                            <button class="item__button">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="item__right">
+                            <img src="./components/img/services/Icons/5.png" alt="" class="item__img">
+                        </div>
+                    </div>
+                    <div class="services__item item">
+                        <div class="item__left">
+                            <h5 class="cardtext item__text">
+                                Реорганизация бизнесов
+                            </h5>
+                            <button class="item__button">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="item__right">
+                            <img src="./components/img/services/Icons/2.png" alt="" class="item__img">
+                        </div>
+                    </div>
+                    <div class="services__item item">
+                        <div class="item__left">
+                            <h5 class="cardtext item__text">
+                                Продажа бизнеса
+                            </h5>
+                            <button class="item__button">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="item__right">
+                            <img src="./components/img/services/Icons/3.png" alt="" class="item__img">
+                        </div>
+                    </div>
+                    <div class="services__item item">
+                        <div class="item__left">
+                            <h5 class="cardtext item__text">
+                                Юридические консультации
+                            </h5>
+                            <button class="item__button">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="item__right">
+                            <img src="./components/img/services/Icons/4.png" alt="" class="item__img">
+                        </div>
+                    </div>
+                    <div class="services__item item">
+                        <div class="item__left">
+                            <h5 class="cardtext item__text">
+                                Ликвидация организаций
+                            </h5>
+                            <button class="item__button">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="item__right">
+                            <img src="./components/img/services/Icons/6.png" alt="" class="item__img">
+                        </div>
+                    </div>
+                    <div class="services__item item">
+                        <div class="item__left">
+                            <h5 class="cardtext item__text">
+                                Разработка договоров
+                            </h5>
+                            <button class="item__button">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="item__right">
+                            <img src="./components/img/services/Icons/7.png" alt="" class="item__img">
+                        </div>
+                    </div>
+                    <div class="services__item item">
+                        <div class="item__left">
+                            <h5 class="cardtext item__text">
+                                Регистрация бизнеса
+                            </h5>
+                            <button class="item__button">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="item__right">
+                            <img src="./components/img/services/Icons/8.png" alt="" class="item__img">
+                        </div>
+                    </div>
+                    <div class="services__item item">
+                        <div class="item__left">
+                            <h5 class="cardtext item__text">
+                                Юридический аутсорсинг
+                            </h5>
+                            <button class="item__button">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="item__right">
+                            <img src="./components/img/services/Icons/2.png" alt="" class="item__img">
+                        </div>
+                    </div>
+                    <div class="services__item item">
+                        <div class="item__left">
+                            <h5 class="cardtext item__text">
+                                Аттестация в строительстве
+                            </h5>
+                            <button class="item__button">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="item__right">
+                            <img src="./components/img/services/Icons/5.png" alt="" class="item__img">
+                        </div>
+                    </div>
+                </div>
+                <button class="button services__button">
+                    Все Услуги
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="targets">
+        <div class="container-lg">
+            <div class="targets__inner">
+                <div class="targets__top">
+                    <h2 class="subtitle targets__subtitle">
+                        Основные направления деятельности
+                    </h2>
+                    <div class="text targets__text">
+                        <p>
+                            Основной принцип нашей работы – максимальная открытость и доверительные отношения с каждым клиентом,
+                            с тем чтобы от начала и до конца совместной работы,
+                            не возникало никакого недопонимания. Мы ставим целью не только привлечение новых клиентов, но и поддержание
+                            длительных партнерских отношений с клиентами, которые уже воспользовались нашими услугами.
+                        </p>
+                        <p>
+                            Быстрота анализа и профессиональных действий наших юристов обеспечивают успешное решение, казалось бы,
+                            неразрешимых вопросов. Богатые знания и солидный опыт позволяют нам оказывать комплексную правовую помощь
+                            в ситуациях любой сложности.
+                        </p>
+                    </div>
+                </div>
+                <div class="targets__bottom">
+                    <div class="targets__slider">
+                        <div id="targets__carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./components/img/target/1.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./components/img/target/2.png"  class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./components/img/target/3.png"  class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#targets__carousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#targets__carousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comments">
+        <div class="container-lg">
+            <div class="comments__content">
+                <h2 class="subtitle">
+                    Отзывы наших партнёров
+                </h2>
+                <div class="comments__gallery">
+                    <div id="multiCarousel" class="carousel comments__carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                            <div class="carousel-item comments__item active">
+                                <div class="d-block col-6 comments__inner">
+                                    <img src="./components/img/feedback 2x/1.png" alt="">
+                                    <div class="comments__text">
+                                        <span class="text">
+                                            директор
+                                        </span>
+                                        <h3 class="name">
+                                            С.В.Косачёв
+                                        </h3>
+                                        <p class="text">
+                                            Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с ограниченной ответственностью
+                                            «МК-Правовые технологии». Благодаря слаженной работе и высокой квалификации Ваших сотрудников и специалистов компания «ВиваСтрой»
+                                            получила качественные юридические услуги по взысканию денежных средств с должника. Профессионализм работников ООО «МК-Правовые технологии»,
+                                            а также желание работать со сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших компаний.
+                                            Рекомендуем...
+                                        </p>
+                                        <button class="comments__item--button">
+                                            Читать далее
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item comments__item">
+                                <div class="d-block col-6 comments__inner">
+                                    <img src="./components/img/feedback 2x/1.png" alt="">
+                                    <div class="comments__text">
+                                        <span class="text">
+                                            глава представительства
+                                        </span>
+                                        <h3 class="name">
+                                            Валерий Мяснянкин
+                                        </h3>
+                                        <p class="text">
+                                            Представительство корпорации
+                                            «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении
+                                            нескольких лет сотрудничает с ООО «МК-Правовые технологии» в
+                                            рамках сопровождения деятельности по юридическим вопросам,
+                                            в том числе по вопросам ведения кадрового делопроизводства –
+                                            абонентское обслуживание. Хотелось бы отметить работу
+                                            специалистов ООО «МК-Правовые технологии» хорошими теплыми
+                                            словами: надёжные, обязательные, пунктуальные. Вопросы любой
+                                            сложности им по плечу. Работая с профессионалами МК-Правовые
+                                            технологии, всегда можно рассчитывать...
+                                        </p>
+                                        <button class="comments__item--button">
+                                            Читать далее
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item comments__item">
+                                <div class="d-block col-6 comments__inner">
+                                    <img src="./components/img/feedback 2x/1.png" alt="">
+                                    <div class="comments__text">
+                                        <span class="text">
+                                            директор
+                                        </span>
+                                        <h3 class="name">
+                                            С.В.Косачёв
+                                        </h3>
+                                        <p class="text">
+                                            Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с ограниченной ответственностью
+                                            «МК-Правовые технологии». Благодаря слаженной работе и высокой квалификации Ваших сотрудников и специалистов компания «ВиваСтрой»
+                                            получила качественные юридические услуги по взысканию денежных средств с должника. Профессионализм работников ООО «МК-Правовые технологии»,
+                                            а также желание работать со сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших компаний.
+                                            Рекомендуем...
+                                        </p>
+                                        <button class="comments__item--button">
+                                            Читать далее
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item comments__item">
+                                <div class="d-block col-6 comments__inner">
+                                    <img src="./components/img/feedback 2x/1.png" alt="">
+                                    <div class="comments__text">
+                                        <span class="text">
+                                            глава представительства
+                                        </span>
+                                        <h3 class="name">
+                                            Валерий Мяснянкин
+                                        </h3>
+                                        <p class="text">
+                                            Представительство корпорации
+                                            «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении
+                                            нескольких лет сотрудничает с ООО «МК-Правовые технологии» в
+                                            рамках сопровождения деятельности по юридическим вопросам,
+                                            в том числе по вопросам ведения кадрового делопроизводства –
+                                            абонентское обслуживание. Хотелось бы отметить работу
+                                            специалистов ООО «МК-Правовые технологии» хорошими теплыми
+                                            словами: надёжные, обязательные, пунктуальные. Вопросы любой
+                                            сложности им по плечу. Работая с профессионалами МК-Правовые
+                                            технологии, всегда можно рассчитывать...
+                                        </p>
+                                        <button class="comments__item--button">
+                                            Читать далее
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#multiCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Предыдущий</span>
+                        </a>
+                        <a class="carousel-control-next" href="#multiCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Cледующий</span>
+                        </a>
+                    </div>
+                </div>
+                <button class="button">
+                     Все отзывы
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container-lg">
+            <div class="partners__inner">
+                <p class="text">
+                    Оказываем юридические услуги юридическим лицам и индивидуальным предпринимателям.
+                    Специализируемся в области хозяйственного права, работаем на всей территории Республики Беларусь, а также за ее пределами, с бизнесом любого масштаба.
+                </p>
+                <div class="partners__button--wrapper">
+                    <button class="button partners__button">
+                        Наши партнеры
+                    </button>
+                </div>
+            </div>
+            <div class="partners__img">
+                <img src="./components/img/partners/1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4b0ec40dd9.js" crossorigin="anonymous"></script>
+    <script src="./js/slider.js"></script>
+</body>
+</html>

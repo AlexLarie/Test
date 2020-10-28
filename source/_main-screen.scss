@@ -1,0 +1,59 @@
+.main{
+    background-color: #E5E5E5;
+    &__inner{
+        max-width: 500px;
+        max-height: 240px;
+        padding-left: 15px;
+        left: 0px !important;
+        top: 0% !important;
+    }
+    .container-lg{
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translateX(-50%);
+    }
+    &__title{
+        text-align: left;
+    }
+    &__text{
+        text-align: left;
+    }
+    .button__wrapper{
+        display: flex;
+        align-items: flex-start;
+    }
+    &__button{
+        width: 200px;
+        height: 45px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    &__arrows{
+        position: relative;
+        display: inline-block;
+        top: -100px;
+        left: 11%;
+    }
+    .slide{
+    position: relative;
+    }
+        //Немного изменил стили бутстрап, знаю что делать это не желательно
+    .carousel-control-prev{
+        position: static !important;
+    }
+    .carousel-control-next{
+        position: static !important;
+    }
+    .carousel-control-prev-icon{
+        position: absolute;
+        background-image: url(/components/img/arrows/left-arrow.png);
+        left: 0px;
+    }
+    .carousel-control-next-icon{
+        position: absolute;
+        background-image: url(/components/img/arrows/right-arrow.png);
+        left: 60px;
+    }
+}
+

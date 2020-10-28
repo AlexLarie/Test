@@ -1,0 +1,22 @@
+.partners{
+    position: relative;
+    &__inner{
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    &__button--wrapper{
+        text-align: center;
+    }
+    &__button{
+        @extend .main__button;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    &__img{
+        margin-top: 40px;
+        margin-bottom: 100px;
+        img{
+            width: 100%;
+        }
+    }
+}
