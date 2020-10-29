@@ -588,3 +588,49 @@ h1, h2, h3, h4, h5, h6 {
 .partners__img img {
   width: 100%;
 }
+
+.description {
+  background-color: #E5E5E5;
+  padding-top: 80px;
+}
+.description__inner {
+  display: grid;
+  grid-template-areas: "first second" "third third";
+}
+.description__item {
+  background-color: #fff;
+  padding: 40px 50px;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.13);
+}
+.description__item:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: first;
+  margin-right: 15px;
+}
+.description__item:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  margin-left: 15px;
+  grid-area: second;
+  position: relative;
+  overflow: hidden;
+}
+.description__item:nth-child(2):after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #DEC377;
+  top: -50px;
+  right: -50px;
+  transform: rotate(45deg);
+}
+.description__item:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  margin-top: 30px;
+  grid-area: third;
+  margin-bottom: 100px;
+}
