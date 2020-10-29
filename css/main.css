@@ -725,3 +725,38 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+.trust__row {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-top: 90px;
+}
+.trust__row:nth-last-child(1) {
+  margin-bottom: 100px;
+}
+.trust__item:nth-child(2) {
+  padding-left: 160px;
+}
+.trust__subtitle {
+  margin-bottom: 30px;
+}
+.trust__li {
+  margin-bottom: 35px;
+  position: relative;
+  color: black;
+  font-family: "lato", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 1%;
+}
+.trust__li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -45px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  top: 50%;
+  background-color: #DEC377;
+}
