@@ -282,7 +282,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: flex-start;
 }
-.main__button, .partners__button, .comments .button, .services__button {
+.main__button, .todo__button, .partners__button, .comments .button, .services__button {
   width: 200px;
   height: 45px;
   margin-top: 50px;
@@ -633,4 +633,95 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
   grid-area: third;
   margin-bottom: 100px;
+}
+
+.todo {
+  background-color: #E5E5E5;
+  padding-bottom: 100px;
+}
+.todo__img {
+  height: 200px;
+  background-image: url(/components/img/bg/1.png);
+  background-repeat: no-repeat;
+}
+.todo__title {
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.todo__row {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 30px;
+}
+.todo__row:nth-child(2) {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.todo__row:nth-child(2) .todo__item:nth-child(1)::before {
+  background-color: rgba(222, 195, 119, 0.75);
+}
+.todo__row:nth-child(2) .todo__item:nth-child(2)::before {
+  background-color: rgba(222, 195, 119, 0.75);
+}
+.todo__row:nth-child(3) {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.todo__row:nth-child(3) .todo__item:nth-child(1)::before {
+  background-color: #dec377;
+}
+.todo__row:nth-child(3) .todo__item:nth-child(2)::before {
+  background-color: #dec377;
+}
+.todo__row:nth-child(4) {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.todo__row:nth-child(4) .todo__item:nth-child(1)::before {
+  background-color: rgba(222, 195, 119, 0.75);
+}
+.todo__row:nth-child(4) .todo__item:nth-child(2)::before {
+  background-color: rgba(222, 195, 119, 0.75);
+}
+.todo__item {
+  background-color: #fff;
+  padding: 25px 20px 20px 100px;
+  margin-right: 30px;
+  position: relative;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.13);
+}
+.todo__item:before {
+  content: "";
+  position: absolute;
+  background-color: rgba(222, 195, 119, 0.4);
+  left: 0px;
+  top: 0px;
+  width: 70px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.todo__item:nth-child(even) {
+  margin-right: 0px;
+}
+.todo__item:hover:before {
+  width: 100%;
+  opacity: 0.5;
+}
+.todo__button--wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 45px;
+}
+.todo__description {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+.todo__description--button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.todo__button {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
