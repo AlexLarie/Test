@@ -3,6 +3,9 @@
     &__inner{
         display: grid;
         grid-template-columns: 60% 40%;
+        @media (max-width: 848px){
+            
+        }
     }
     &__button--wrapper{
         text-align: center;

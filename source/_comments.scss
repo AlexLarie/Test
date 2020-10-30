@@ -4,6 +4,11 @@
     background-color: #fff;
     top: -100px;
     z-index: 1;
+    @media (max-width: 848px){
+        padding-top: 50px;
+        top: 0px;
+        padding-bottom: 50px;
+    }
     &__gallery{
         margin-top: 35px;
     }
@@ -56,9 +61,6 @@
         top: 107%;
         background-image: url(/components/img/arrows/right-arrow.png);
         transform: translateY(50%);
-    }
-    &__item{
-        
     }
     &__inner{
         display: flex;

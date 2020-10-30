@@ -20,6 +20,9 @@
             height: 1px;
             background-color: rgba(179, 176, 176, 0.5);
         }
+        @media (max-width: 848px){
+            display: none;
+        }
     }
     &__text--black{
         color: black;
@@ -28,6 +31,9 @@
     }
     &__links{
         display: flex;
+        @media (max-width: 848px){
+            flex-wrap: wrap;
+        }
     }
     &__link{
         margin-right: 18px;
@@ -45,6 +51,9 @@
             background-color: #DEC377;
             color: white;
             text-decoration: none;
+        }
+        @media (max-width: 848px){
+            margin-bottom: 10px;
         }
     }
     &__center{
@@ -84,5 +93,11 @@
         align-items: center;
         padding: 20px;
         margin-top: 50px;
+    }
+    .subtitle{
+        @media (max-width: 848px){
+            font-size: 15px;
+            line-height: 15px;
+        }
     }
 }

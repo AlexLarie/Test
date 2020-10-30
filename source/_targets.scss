@@ -1,6 +1,10 @@
 .targets{
     padding-top: 100px;
     background-color: #E5E5E5;
+    @media (max-width: 848px){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     &__slider{
         position: relative;
         z-index: 2;
@@ -9,6 +13,14 @@
         display: grid;
         grid-template-columns: 35% 65%;
         margin-bottom: 60px;
+        @media (max-width: 848px){
+            grid-template-columns: 100%;
+        }
+    }
+    &__bottom{
+        @media (max-width: 848px){
+            display: none;
+        }
     }
     //Немного изменил стили бутстрап, знаю что делать это не желательно
     .carousel-control-prev{

@@ -1,8 +1,6 @@
 .main{
     background-color: #E5E5E5;
     &__inner{
-        max-width: 500px;
-        max-height: 240px;
         padding-left: 15px;
         left: 0px !important;
         top: 0% !important;
@@ -32,11 +30,17 @@
     &__arrows{
         position: relative;
         display: inline-block;
-        top: -100px;
+        bottom: 90px;
         left: 11%;
+        @media (max-width: 1150px){
+            left: calc(50% - 37px);
+        }
+        @media (max-width: 848px){
+            bottom: 0px;
+        }
     }
     .slide{
-    position: relative;
+        position: relative;
     }
         //Немного изменил стили бутстрап, знаю что делать это не желательно
     .carousel-control-prev{
@@ -54,6 +58,9 @@
         position: absolute;
         background-image: url(/components/img/arrows/right-arrow.png);
         left: 60px;
+    }
+    &__item{
+        padding-bottom: 20px;
     }
 }
 

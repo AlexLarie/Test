@@ -1,11 +1,20 @@
 .description{
     background-color: #E5E5E5;
     padding-top: 80px;
+    @media (max-width: 848px){
+        padding-top: 50px;
+    }
     &__inner{
         display: grid;
         grid-template-areas:
         'first second'
         'third third';
+        @media (max-width: 848px){
+        grid-template-areas:
+        'first'
+        'second'
+        'third';
+        }
     }
     &__item{
         background-color: #fff;
@@ -42,6 +51,20 @@
             margin-top: 30px;
             grid-area: third;
             margin-bottom: 100px;
+        }
+        @media (max-width: 848px){
+            margin-right: 0px;
+            margin-left: 0px;
+            &:nth-child(1){
+                margin-right: 0px;
+                margin-bottom: 30px;
+            }
+            &:nth-child(2){
+                margin-left: 0px;
+            }
+            &:nth-child(3){
+                margin-bottom: 30px;
+            }
         }
     }
 }

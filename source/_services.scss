@@ -1,6 +1,9 @@
 .services{
     background-color: #E5E5E5;
     padding-top: 100px;
+    @media (max-width: 848px){
+        padding-top: 50px;
+    }
     &__gallery{
         display: grid;
         grid-template-columns: repeat(3, 33%);

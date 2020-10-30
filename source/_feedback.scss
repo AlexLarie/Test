@@ -7,10 +7,13 @@
     &__inner{
         display: grid;
         grid-template-columns: 50% 50%;
+        @media (max-width: 848px){
+            grid-template-columns: 100%;
+        }
     }
     &__subtitle{
         margin-bottom: 55px;
-        line-height: 0px;
+        line-height: 30px;
     }
     &__row{
         display: flex;
@@ -64,6 +67,9 @@
             right: -50px;
             top: -50px;
         }
+        @media (max-width: 848px){
+            margin-top: 30px;
+        }
     }
     .contact-form{
         display: flex;
@@ -114,13 +120,14 @@
 }
 .ok__inner{
     width: 70%;
-    height: 50%;
+    height: 60%;
     background-color: rgb(231, 229, 229);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    padding: 10px;
     .button{
         font-size: 20px;
         padding: 10px 30px;

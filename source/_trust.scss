@@ -1,4 +1,7 @@
 .trust{
+    @media (max-width: 848px){
+        display: none;
+    }
     &__row{
         display: grid;
         grid-template-columns: repeat(2, 50%);

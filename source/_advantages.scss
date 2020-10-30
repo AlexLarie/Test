@@ -1,5 +1,8 @@
 .advantages{
     position: relative;
+    @media (max-width: 848px){
+        display: none;
+    }
     &__gallery{
         display: flex;
         justify-content: space-between;
@@ -9,6 +12,9 @@
         transform: translateX(-50%);
         z-index: 6;
         top: -70px;
+        @media (max-width: 1150px){
+            top: -10px;
+        }
     }
     &__item{
         display: flex;
