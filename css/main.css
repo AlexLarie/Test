@@ -282,7 +282,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: flex-start;
 }
-.main__button, .todo__button, .partners__button, .comments .button, .services__button {
+.main__button, .price .button, .todo__button, .partners__button, .comments .button, .services__button {
   width: 200px;
   height: 45px;
   margin-top: 50px;
@@ -944,7 +944,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(0, 0, 0, 0.082);
 }
 .feedback .button {
-  padding: 5px 0px;
+  padding: 10px 10px;
 }
 .feedback a {
   color: rgba(65, 64, 64, 0.705);
@@ -972,6 +972,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   color: gold;
   top: 1000px;
+  transition: all 0.5s ease;
 }
 
 .ok__inner {
@@ -988,4 +989,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   padding: 10px 30px;
   margin-top: 20px;
+}
+
+.price {
+  background-color: #E5E5E5;
+  padding-top: 100px;
+}
+.price .text {
+  margin: 30px 0px;
+}
+.price .button {
+  margin-top: 0px;
+  margin-bottom: 100px;
 }
