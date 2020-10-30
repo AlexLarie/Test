@@ -1,0 +1,45 @@
+.advantages{
+    &--color{
+        background-color: #E5E5E5;
+        padding-top: 80px;
+    }
+    &__gallery--bottom{
+        position: static;
+        transform: translateX(0%);
+        margin-bottom: 40px;
+    }
+    &__item--bottom{
+        justify-content: flex-start;
+        padding: 20px;
+        align-items: center;
+    }
+    &__title{
+        margin-bottom: 35px;
+    }
+    &__description{
+        margin-left: 0px;
+        padding-right: 20%;
+        overflow: hidden;
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #DEC377;
+            top: -100px;
+            right: -100px;
+            transform: rotate(45deg);
+            opacity: 0;
+            transition: all .3s ease;
+        }
+        &:hover:after{
+            opacity: 1;
+            right: -50px;
+            top: -50px;
+        }
+        &:hover{
+            top: 0;
+        }
+    }
+}

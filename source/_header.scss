@@ -1,5 +1,6 @@
 .header{
     margin-bottom: 25px;
+    padding-top: 20px;
     &__top{
         display: flex;
         justify-content: space-between;
@@ -35,6 +36,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    a{
+        transition: all .3s ease;
+        &:hover{
+            color: #DEC377;
+            text-decoration: none;
+        }
     }
 }
 .menu{

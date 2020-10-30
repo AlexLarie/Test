@@ -1,0 +1,12 @@
+.price{
+    background-color: #E5E5E5;
+    padding-top: 100px;
+    .text{
+        margin: 30px 0px;
+    }
+    .button{
+        @extend .main__button;
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+}
