@@ -37,32 +37,32 @@
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#" class="menu__link">
+                            <a href="#main" class="menu__link">
                                 Главная
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">
+                            <a href="#about" class="menu__link">
                                 О нас
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">
+                            <a href="#services" class="menu__link">
                                 Услуги
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">
+                            <a href="#price" class="menu__link">
                                 Тарифы
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">
+                            <a href="#info" class="menu__link">
                                 Инфоцентр
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">
+                            <a href="#contacts" class="menu__link">
                                 Контакты
                             </a>
                         </li>
@@ -71,7 +71,7 @@
             </div>
         </div>
     </header>
-    <section class="main">
+    <section class="main" id="main">
         <div class="main__slider">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -176,7 +176,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container-lg">
             <div class="about__content">
                 <div class="about__inner">
@@ -209,7 +209,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container-lg">
             <div class="services__inner">
                 <h2 class="subtitle">
@@ -576,7 +576,7 @@
             </div>
         </div>
     </section>
-    <section class="todo">
+    <section class="todo" id="price">
         <div class="todo__img">
         </div>
         <div class="container-lg">
@@ -715,7 +715,7 @@
             </div>
         </div>
     </section>
-    <section class="trust">
+    <section class="trust" id="info">
         <div class="container-lg">
             <div class="trust__inner">
                 <div class="trust__row">
@@ -915,7 +915,7 @@
             </div>
         </div>
     </section>
-    <footer class="contacts">
+    <footer class="contacts" id="contacts">
         <div class="container-lg">
             <div class="contacts__inner">
                 <div class="contacts__left">
@@ -929,33 +929,33 @@
                         <span class="text contacts__text--black">Наш рейтинг </span><span class="text">5 из 5 (15 отзывов)</span>
                     </p>
                     <div class="contacts__links">
-                        <span class="contacts__link">
+                        <a href="#" class="contacts__link">
                             <i class="fab fa-vk"></i>
-                        </span>
-                        <span class="contacts__link">
+                        </a>
+                        <a href="#" class="contacts__link">
                             <i class="fab fa-odnoklassniki"></i>
-                        </span>
-                        <span class="contacts__link">
+                        </a>
+                        <a href="#" class="contacts__link">
                             <i class="fab fa-linkedin-in"></i>
-                        </span>
-                        <span class="contacts__link">
+                        </a>
+                        <a href="#" class="contacts__link">
                             <i class="fab fa-instagram"></i>
-                        </span>
-                        <span class="contacts__link">
+                        </a>
+                        <a href="#" class="contacts__link">
                             <i class="fab fa-youtube"></i>
-                        </span>
-                        <span class="contacts__link">
+                        </a>
+                        <a href="#" class="contacts__link">
                             <i class="fab fa-facebook-f"></i>
-                        </span>
+                        </a>
                     </div>
                 </div>
                 <div class="contacts__center">
-                    <div class="subtitle contacts__subtitle">
+                    <div class="contacts__subtitle contacts__subtitle--row">
                         Наши офисы
                     </div>
                     <div class="contacts__address">
                         <div class="contacts__item item">
-                            <h5 class="contacts__subtitle item__subtitle">
+                            <h5 class="subtitle">
                                 Контакты в Минске
                             </h5>
                             <span class="item__number text">
@@ -970,7 +970,7 @@
                             <span class="text contacts__text--black">
                                 Адрес
                             </span>
-                            <span class="item__address">
+                            <span class="text">
                                 г. Минск, ул. Широкая, д. 3, пом. 146, оф. 4
                             </span>
                             <span class="text contacts__text--black">
@@ -983,107 +983,120 @@
                                 info@jurisprudent.by
                             </a>
                         </div>
-                        <div class="contacts__item item">
-                            <h5 class="contacts__subtitle item__subtitle">
-                                Отдел в Могилёве
-                            </h5>
-                            <span class="text contacts__text--black">
-                                Адрес
-                            </span>
-                            <span class="item__address text">
-                                г. Могилев, ул. Космонавтов, д. 19, оф. 507
-                            </span>
-                            <a href="#" class="item__link text">
-                                mogilev@jurisprudent.by
-                            </a>
+                        <div class="contacts__other">
+                            <div class="contacts__item item">
+                                <h5 class="subtitle">
+                                    Отдел в Могилёве
+                                </h5>
+                                <span class="text contacts__text--black">
+                                    Адрес
+                                </span>
+                                <span class="item__address text">
+                                    г. Могилев, ул. Космонавтов, д. 19, оф. 507
+                                </span>
+                                <a href="#" class="item__link text">
+                                    mogilev@jurisprudent.by
+                                </a>
+                            </div>
+                            <div class="contacts__item item">
+                                <h5 class="subtitle">
+                                    Отдел в Бресте
+                                </h5>
+                                <span class="text contacts__text--black">
+                                    Адрес
+                                </span>
+                                <span class="item__address text">
+                                    г. Брест, б-р Шевченко, д. 4, оф. 401
+                                </span>
+                                <a href="#" class="item__link text">
+                                    brest@jurisprudent.by
+                                </a>
+                            </div>
+                            <div class="contacts__item item">
+                                <h5 class="subtitle">
+                                    Отдел в Витебске
+                                </h5>
+                                <span class="text contacts__text--black">
+                                    Адрес
+                                </span>
+                                <span class="item__address text">
+                                    г. Витебск, ул.Гоголя, д. 14, оф. 614
+                                </span>
+                                <a href="#" class="item__link text">
+                                    vitebsk@jurisprudent.by
+                                </a>
+                            </div>
                         </div>
-                        <div class="contacts__item item">
-                            <h5 class="contacts__subtitle item__subtitle">
-                                Отдел в Бресте
-                            </h5>
-                            <span class="text contacts__text--black">
-                                Адрес
-                            </span>
-                            <span class="item__address text">
-                                г. Брест, б-р Шевченко, д. 4, оф. 401
-                            </span>
-                            <a href="#" class="item__link text">
-                                brest@jurisprudent.by
-                            </a>
-                        </div>
-                        <div class="contacts__item item">
-                            <h5 class="contacts__subtitle item__subtitle">
-                                Отдел в Витебске
-                            </h5>
-                            <span class="text contacts__text--black">
-                                Адрес
-                            </span>
-                            <span class="item__address text">
-                                г. Витебск, ул.Гоголя, д. 14, оф. 614
-                            </span>
-                            <a href="#" class="item__link text">
-                                vitebsk@jurisprudent.by
-                            </a>
-                        </div>
-                        <div class="contacts__item item">
-                            <h5 class="contacts__subtitle item__subtitle">
-                                Отдел в Гродно
-                            </h5>
-                            <span class="text contacts__text--black">
-                                Адрес
-                            </span>
-                            <span class="item__address text">
-                                г. Гродно, ул. Карла Маркса, д. 31-1, оф. 1010
-                            </span>
-                            <a href="#" class="item__link text">
-                                grodno@jurisprudent.by
-                            </a>
-                        </div>
-                        <div class="contacts__item item">
-                            <h5 class="contacts__subtitle item__subtitle">
-                                Отдел в Гомеле
-                            </h5>
-                            <span class="text contacts__text--black">
-                                Адрес
-                            </span>
-                            <span class="item__address text">
-                                г. Гомель, пр. Ленина, д. 10, оф. 901
-                            </span>
-                            <a href="#" class="item__link text">
-                                gomel@jurisprudent.by
-                            </a>
+                        <div class="contacts__other">
+                            <div class="contacts__item item">
+                                <h5 class="subtitle">
+                                    Отдел в Гродно
+                                </h5>
+                                <span class="text contacts__text--black">
+                                    Адрес
+                                </span>
+                                <span class="item__address text">
+                                    г. Гродно, ул. Карла Маркса, д. 31-1, оф. 1010
+                                </span>
+                                <a href="#" class="item__link text">
+                                    grodno@jurisprudent.by
+                                </a>
+                            </div>
+                            <div class="contacts__item item">
+                                <h5 class="subtitle">
+                                    Отдел в Гомеле
+                                </h5>
+                                <span class="text contacts__text--black">
+                                    Адрес
+                                </span>
+                                <span class="item__address text">
+                                    г. Гомель, пр. Ленина, д. 10, оф. 901
+                                </span>
+                                <a href="#" class="item__link text">
+                                    gomel@jurisprudent.by
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="contacts__right right">
-                    <div class="subtitle contacts__subtitle">
+                    <div class="contacts__subtitle contacts__subtitle--row">
                         Время работы
                     </div>
                     <div class="right__inner">
-                        <span class="text contacts__text--black">
-                            Прием посетителей
-                        </span>
-                        <span class="right__text text">
-                            Ежедневно с 8.00 до 19.00
-                            Выходной: суббота - воскресенье.
-                        </span>
-                        <span class="text contacts__text--black">
-                            Прием звонков
-                        </span>
-                        <span class="right__text text">
-                            Ежедневно с 8.00 до 22.00
-                            Без выходных
-                        </span>
-                        <span class="text contacts__text--black">
-                            Онлайн консультант
-                        </span>
-                        <span class="right__text text">
-                            Круглосуточно 24/7
-                            Без выходных
-                        </span>
+                        <div class="contacts__time">
+                            <span class="text contacts__text--black">
+                                Прием посетителей
+                            </span>
+                            <span class="right__text text">
+                                Ежедневно с 8.00 до 19.00
+                                Выходной: суббота - воскресенье.
+                            </span>
+                        </div>
+                        <div class="contacts__time">
+                            <span class="text contacts__text--black">
+                                Прием звонков
+                            </span>
+                            <span class="right__text text">
+                                Ежедневно с 8.00 до 22.00
+                                Без выходных
+                            </span>
+                        </div>
+                        <div class="contacts__time">
+                            <span class="text contacts__text--black">
+                                Онлайн консультант
+                            </span>
+                            <span class="right__text text">
+                                Круглосуточно 24/7
+                                Без выходных
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="contacts__end text">
+            Create by Alex Larie
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
